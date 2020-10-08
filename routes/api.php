@@ -20,7 +20,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::middleware('auth:sanctum')->post('/version', function (Request $request) {
        
    $myObj=new \stdClass();
-   $myObj->bool = "true";
+   $myObj->bo = "true";
    $myJSON = json_encode($myObj);
 
    if($request->version != '')
