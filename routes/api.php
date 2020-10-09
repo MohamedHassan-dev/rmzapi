@@ -17,7 +17,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware('auth:sanctum')->post('/version', function (Request $request) {
+Route::post('/version', function (Request $request) {
        
    $myObj=new \stdClass();
    $myObj->bo = "true";
